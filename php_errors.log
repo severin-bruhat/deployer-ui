@@ -1,0 +1,93 @@
+[04-Aug-2015 19:41:20 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/deployer-ui/web/deployer-ui/vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/deployer-ui/web/index.php on line 3
+[04-Aug-2015 19:41:20 UTC] PHP Stack trace:
+[04-Aug-2015 19:41:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/deployer-ui/web/index.php:0
+[04-Aug-2015 19:41:20 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/deployer-ui/web/deployer-ui/vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/deployer-ui/web/index.php on line 3
+[04-Aug-2015 19:41:20 UTC] PHP Stack trace:
+[04-Aug-2015 19:41:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/deployer-ui/web/index.php:0
+[04-Aug-2015 19:41:39 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/deployer-ui/web/vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/deployer-ui/web/index.php on line 3
+[04-Aug-2015 19:41:39 UTC] PHP Stack trace:
+[04-Aug-2015 19:41:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/deployer-ui/web/index.php:0
+[04-Aug-2015 19:41:39 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/deployer-ui/web/vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/deployer-ui/web/index.php on line 3
+[04-Aug-2015 19:41:39 UTC] PHP Stack trace:
+[04-Aug-2015 19:41:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/deployer-ui/web/index.php:0
+[04-Aug-2015 19:43:05 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/deployer-ui/web../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/deployer-ui/web/index.php on line 3
+[04-Aug-2015 19:43:05 UTC] PHP Stack trace:
+[04-Aug-2015 19:43:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/deployer-ui/web/index.php:0
+[04-Aug-2015 19:43:05 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/deployer-ui/web../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/deployer-ui/web/index.php on line 3
+[04-Aug-2015 19:43:05 UTC] PHP Stack trace:
+[04-Aug-2015 19:43:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/deployer-ui/web/index.php:0
+[04-Aug-2015 20:23:17 UTC] PHP Warning:  scandir(): Directory name cannot be empty in /home/ubuntu/workspace/web/index.php on line 12
+[04-Aug-2015 20:23:17 UTC] PHP Stack trace:
+[04-Aug-2015 20:23:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/index.php:0
+[04-Aug-2015 20:23:17 UTC] PHP   2. Silex\Application->run() /home/ubuntu/workspace/web/index.php:41
+[04-Aug-2015 20:23:17 UTC] PHP   3. Silex\Application->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:558
+[04-Aug-2015 20:23:17 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:581
+[04-Aug-2015 20:23:17 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:68
+[04-Aug-2015 20:23:17 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:23:17 UTC] PHP   7. {closure:/home/ubuntu/workspace/web/index.php:22-39}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:23:17 UTC] PHP   8. Pimple->offsetGet() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:26
+[04-Aug-2015 20:23:17 UTC] PHP   9. {closure:/home/ubuntu/workspace/web/index.php:11-13}() /home/ubuntu/workspace/vendor/pimple/pimple/lib/Pimple.php:83
+[04-Aug-2015 20:23:17 UTC] PHP  10. scandir() /home/ubuntu/workspace/web/index.php:12
+[04-Aug-2015 20:23:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/web/index.php on line 26
+[04-Aug-2015 20:23:17 UTC] PHP Stack trace:
+[04-Aug-2015 20:23:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/index.php:0
+[04-Aug-2015 20:23:17 UTC] PHP   2. Silex\Application->run() /home/ubuntu/workspace/web/index.php:41
+[04-Aug-2015 20:23:17 UTC] PHP   3. Silex\Application->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:558
+[04-Aug-2015 20:23:17 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:581
+[04-Aug-2015 20:23:17 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:68
+[04-Aug-2015 20:23:17 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:23:17 UTC] PHP   7. {closure:/home/ubuntu/workspace/web/index.php:22-39}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:24:04 UTC] PHP Warning:  scandir(): Directory name cannot be empty in /home/ubuntu/workspace/web/index.php on line 12
+[04-Aug-2015 20:24:04 UTC] PHP Stack trace:
+[04-Aug-2015 20:24:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/index.php:0
+[04-Aug-2015 20:24:04 UTC] PHP   2. Silex\Application->run() /home/ubuntu/workspace/web/index.php:42
+[04-Aug-2015 20:24:04 UTC] PHP   3. Silex\Application->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:558
+[04-Aug-2015 20:24:04 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:581
+[04-Aug-2015 20:24:04 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:68
+[04-Aug-2015 20:24:04 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:24:04 UTC] PHP   7. {closure:/home/ubuntu/workspace/web/index.php:23-40}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:24:04 UTC] PHP   8. Pimple->offsetGet() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:27
+[04-Aug-2015 20:24:04 UTC] PHP   9. {closure:/home/ubuntu/workspace/web/index.php:11-14}() /home/ubuntu/workspace/vendor/pimple/pimple/lib/Pimple.php:83
+[04-Aug-2015 20:24:04 UTC] PHP  10. scandir() /home/ubuntu/workspace/web/index.php:12
+[04-Aug-2015 20:24:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/web/index.php on line 27
+[04-Aug-2015 20:24:04 UTC] PHP Stack trace:
+[04-Aug-2015 20:24:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/index.php:0
+[04-Aug-2015 20:24:04 UTC] PHP   2. Silex\Application->run() /home/ubuntu/workspace/web/index.php:42
+[04-Aug-2015 20:24:04 UTC] PHP   3. Silex\Application->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:558
+[04-Aug-2015 20:24:04 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:581
+[04-Aug-2015 20:24:04 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:68
+[04-Aug-2015 20:24:04 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:24:04 UTC] PHP   7. {closure:/home/ubuntu/workspace/web/index.php:23-40}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:54:24 UTC] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/ubuntu/workspace/web/index.php on line 59
+[04-Aug-2015 20:54:24 UTC] PHP Stack trace:
+[04-Aug-2015 20:54:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/index.php:0
+[04-Aug-2015 20:54:24 UTC] PHP   2. Silex\Application->run() /home/ubuntu/workspace/web/index.php:76
+[04-Aug-2015 20:54:24 UTC] PHP   3. Silex\Application->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:558
+[04-Aug-2015 20:54:24 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:581
+[04-Aug-2015 20:54:24 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:68
+[04-Aug-2015 20:54:24 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:54:24 UTC] PHP   7. {closure:/home/ubuntu/workspace/web/index.php:42-71}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:54:24 UTC] PHP   8. fread() /home/ubuntu/workspace/web/index.php:59
+[04-Aug-2015 20:55:00 UTC] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/ubuntu/workspace/web/index.php on line 59
+[04-Aug-2015 20:55:00 UTC] PHP Stack trace:
+[04-Aug-2015 20:55:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/index.php:0
+[04-Aug-2015 20:55:00 UTC] PHP   2. Silex\Application->run() /home/ubuntu/workspace/web/index.php:76
+[04-Aug-2015 20:55:00 UTC] PHP   3. Silex\Application->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:558
+[04-Aug-2015 20:55:00 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:581
+[04-Aug-2015 20:55:00 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:68
+[04-Aug-2015 20:55:00 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:55:00 UTC] PHP   7. {closure:/home/ubuntu/workspace/web/index.php:42-71}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:55:00 UTC] PHP   8. fread() /home/ubuntu/workspace/web/index.php:59
+[04-Aug-2015 20:55:26 UTC] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/ubuntu/workspace/web/index.php on line 59
+[04-Aug-2015 20:55:26 UTC] PHP Stack trace:
+[04-Aug-2015 20:55:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/web/index.php:0
+[04-Aug-2015 20:55:26 UTC] PHP   2. Silex\Application->run() /home/ubuntu/workspace/web/index.php:76
+[04-Aug-2015 20:55:26 UTC] PHP   3. Silex\Application->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:558
+[04-Aug-2015 20:55:26 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php:581
+[04-Aug-2015 20:55:26 UTC] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:68
+[04-Aug-2015 20:55:26 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:55:26 UTC] PHP   7. {closure:/home/ubuntu/workspace/web/index.php:42-71}() /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php:147
+[04-Aug-2015 20:55:26 UTC] PHP   8. fread() /home/ubuntu/workspace/web/index.php:59
+[04-Aug-2015 20:57:05 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/web/index.php on line 60
+[04-Aug-2015 20:57:54 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/web/index.php on line 60
+[04-Aug-2015 20:57:58 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/web/index.php on line 60

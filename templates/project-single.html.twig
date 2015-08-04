@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1>Projet {{ project.name }}</h1>
+    
+    <h2>Recette</h2>
+    <textarea name="deploy_file" rows="50" cols="100">{{ project.deploy_file_content }}</textarea>
+    
+    <h2>Actions</h2>
+    Déployer en recette<br />
+    Déployer en prod<br />
+    Rollback en recette<br />
+    Rollback en prod<br />
+    Action manuelle : commande à exécuter
+    
+    
+{% endblock %}
+

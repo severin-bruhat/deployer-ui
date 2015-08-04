@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1>
+        Liste des recettes
+    </h1>
+    <ul>
+    {% for project in projects %}
+        <li>{{ project }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+
