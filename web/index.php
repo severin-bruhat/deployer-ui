@@ -71,8 +71,12 @@ $app->get('/projects/{name}', function (Silex\Application $app, $name)  {
     return $output; // Return it to so it gets displayed by the browser
 });
 
-
-
+//action de mise à jour d'une recette
+$app->post('/ajax/updateRecipe', function (Silex\Application $app)  {
+    die(var_dump("post"));
+});
 
 $app->run();
+
+//help : https://www.digitalocean.com/community/tutorials/how-to-get-started-with-silex-on-ubuntu-14-04
 ?>

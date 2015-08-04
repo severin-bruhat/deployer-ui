@@ -2,16 +2,27 @@
 {% block body %}
     <h1>Projet {{ project.name }}</h1>
     
-    <h2>Recette</h2>
-    <textarea name="deploy_file" rows="50" cols="100">{{ project.deploy_file_content }}</textarea>
-    
-    <h2>Actions</h2>
-    Déployer en recette<br />
-    Déployer en prod<br />
-    Rollback en recette<br />
-    Rollback en prod<br />
-    Action manuelle : commande à exécuter
+    <div class="page-header">
+        <h2>Recette</h2>
+    </div>
+    <textarea name="deploy_file" rows="40" cols="120">{{ project.deploy_file_content }}</textarea>
+    <button type="button" class="btn btn-lg btn-default" id="update_recipe">Mettre à jour</button>
     
     
+     <div class="page-header">
+        <h2>Actions</h2>
+      </div>
+      <p>
+        <button type="button" class="btn btn-lg btn-success">Déployer en recette</button>
+        <button type="button" class="btn btn-lg btn-warning">Rollback en recette</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-lg btn-success">Déployer en prod</button>
+        <button type="button" class="btn btn-lg btn-warning">Rollback en prod</button>
+      </p>
+      <p>
+          Action manuelle : commande à exécuter
+      </p>
+
 {% endblock %}
 

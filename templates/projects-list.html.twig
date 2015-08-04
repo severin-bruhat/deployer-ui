@@ -1,8 +1,10 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <h1>
-        Liste des recettes
-    </h1>
+    <div class="page-header">
+        <h1>
+            Liste des recettes
+        </h1>
+    </div>    
     <ul>
     {% for project in projects %}
         <li>{{ project }}</li>
