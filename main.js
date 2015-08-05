@@ -3,7 +3,7 @@ $( "#update_recipe" ).bind( "click", function() {
         type: "POST",
         url: "/web/ajax/updateRecipe",
         data: {
-            content: "data-ref"
+            content: {recipe:$( "#update_recipe" ).data("ref"), deploy_file_content:$('#deploy_file').val()} 
         },
         success: function( data ) {
             console.log(data);

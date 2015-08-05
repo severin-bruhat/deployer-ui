@@ -7,7 +7,7 @@
     </div>    
     <ul>
     {% for project in projects %}
-        <li>{{ project }}</li>
+        <li><a href="projects/{{ project }}">{{ project }}</a></li>
     {% endfor %}
     </ul>
 {% endblock %}

@@ -72,8 +72,15 @@ $app->get('/projects/{name}', function (Silex\Application $app, $name)  {
 });
 
 //action de mise à jour d'une recette
-$app->post('/ajax/updateRecipe', function (Silex\Application $app)  {
-    die(var_dump("post"));
+$app->post('/ajax/updateRecipe', function (Silex\Application $app, Symfony\Component\HttpFoundation\Request $request)  {
+    $content = $request->request->get('content');
+    $recipe = $content['recipe'];
+    $deploy_file_content = $content['deploy_file_content'];
+    
+    $file = RECIPES_FOLDER.'/'.$recipe.'/deploy.php';
+    file_put_contents($file, $deploy_file_content);
+    return $deploy_file_content;
+    
 });
 
 $app->run();
