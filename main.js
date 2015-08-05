@@ -15,3 +15,22 @@ $( "#update_recipe" ).bind( "click", function() {
         }
     })  
 });
+
+$( "#deployStaging" ).bind( "click", function() {
+    $.ajax({
+        type: "POST",
+        url: "/web/ajax/deployStaging",
+        data: {
+            content: {recipe:$( "#deployStaging" ).data("ref")} 
+        },
+        success: function( data ) {
+            console.log(data);
+            
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+            console.log(xhr.status);
+            console.log(thrownError);
+        }
+    })  
+});
+
