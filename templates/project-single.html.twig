@@ -27,10 +27,10 @@
 {% endblock %}
 
 {% block javascript %}
-    <script src="/web/js/ace.js"></script>
-    <script src="/web/js/mode-php.js"></script>
-    <script src="/web/js/theme-monokai.js"></script>
-    <script src="/web/js/theme-textmate.js"></script>
-    <script src="/web/js/jquery-ace.min.js"></script>
+    <script src="{{ app.request.basepath }}/js/ace.js"></script>
+    <script src="{{ app.request.basepath }}/js/mode-php.js"></script>
+    <script src="{{ app.request.basepath }}/js/theme-monokai.js"></script>
+    <script src="{{ app.request.basepath }}/js/theme-textmate.js"></script>
+    <script src="{{ app.request.basepath }}/js/jquery-ace.min.js"></script>
 {% endblock javascript %}
 
