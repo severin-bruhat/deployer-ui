@@ -86,15 +86,14 @@ $app->post('/ajax/updateRecipe', function (Silex\Application $app, Symfony\Compo
 $app->post('/ajax/deployStaging', function (Silex\Application $app, Symfony\Component\HttpFoundation\Request $request)  {
     $content = $request->request->get('content');
     $recipe = $content['recipe'];
-    
     $folder = RECIPES_FOLDER.'/'.$recipe;
-    exec("cd ".$folder);
-    exec("dep deploy staging");
-    return true;
+    
+    $output = shell_exec('cd '.$folder.'; pwd; dep test recette');
+    echo "<pre>$output</pre>";
+    return $output;
     
 });
 
 $app->run();
 
-//help : https://www.digitalocean.com/community/tutorials/how-to-get-started-with-silex-on-ubuntu-14-04
 ?>
