@@ -5,7 +5,7 @@
     <div class="page-header">
         <h2>Recette</h2>
     </div>
-    <textarea name="deploy_file" id="deploy_file" rows="25" cols="100">{{ project.deploy_file_content }}</textarea><br>
+    <textarea class="code" name="deploy_file" id="deploy_file" rows="25" cols="150">{{ project.deploy_file_content }}</textarea><br>
     <button type="button" class="btn btn-lg btn-default" id="update_recipe" data-ref="{{ project.name }}">Mettre à jour</button>
     
     
@@ -25,4 +25,12 @@
       </p>
 
 {% endblock %}
+
+{% block javascript %}
+    <script src="/web/js/ace.js"></script>
+    <script src="/web/js/mode-php.js"></script>
+    <script src="/web/js/theme-monokai.js"></script>
+    <script src="/web/js/theme-textmate.js"></script>
+    <script src="/web/js/jquery-ace.min.js"></script>
+{% endblock javascript %}
 

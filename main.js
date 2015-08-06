@@ -34,3 +34,5 @@ $( "#deployStaging" ).bind( "click", function() {
     })  
 });
 
+ $('textarea.code').ace({ theme: 'monokai', lang: 'php' });
+
